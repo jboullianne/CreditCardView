@@ -7,13 +7,13 @@
 
 import UIKit
 
-class CreditCardView: UIView {
+public class CreditCardView: UIView {
 
     
     var backgroundView:CCBackgroundView
     
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         backgroundView = CCBackgroundView(frame: frame)
         
         super.init(frame: frame)
@@ -21,7 +21,7 @@ class CreditCardView: UIView {
         setupViews()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         backgroundView = CCBackgroundView()
         
         super.init(coder: aDecoder)
@@ -29,7 +29,7 @@ class CreditCardView: UIView {
         setupViews()
     }
     
-    init(frame: CGRect, template: CCBackgroundView.CCBackgroundTemplate) {
+    public init(frame: CGRect, template: CCBackgroundView.CCBackgroundTemplate) {
         backgroundView = CCBackgroundView(frame: frame, template: template)
         super.init(frame: frame)
         

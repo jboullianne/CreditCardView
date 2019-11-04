@@ -7,10 +7,10 @@
 
 import UIKit
 
-class CCBackgroundView: UIView {
+public class CCBackgroundView: UIView {
     
     // Holds Templates For Credit Card Background
-    enum CCBackgroundTemplate {
+    public enum CCBackgroundTemplate {
         case Basic
     }
     
@@ -31,12 +31,13 @@ class CCBackgroundView: UIView {
         self.template = template
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         // Drawing code
         
         if let template = template {
             switch template {
                 case .Basic:
+                    drawBasicTemplate(rect: rect)
                     break
             }
         }

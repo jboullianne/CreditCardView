@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import CreditCardView
 
 class ViewController: UIViewController {
 
+    var creditCardView:CreditCardView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        creditCardView = CreditCardView(frame: CGRect(x: 5, y: 70, width: self.view.frame.width - 20, height: 200), template: .Basic)
+        self.view.addSubview(creditCardView)
     }
 
     override func didReceiveMemoryWarning() {

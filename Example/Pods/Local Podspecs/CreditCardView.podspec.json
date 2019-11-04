@@ -1,0 +1,22 @@
+{
+  "name": "CreditCardView",
+  "version": "0.1.0",
+  "summary": "A short description of CreditCardView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jboullianne/CreditCardView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jboullianne": "jboullianne@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jboullianne/CreditCardView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CreditCardView/Classes/**/*"
+}

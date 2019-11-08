@@ -12,32 +12,27 @@ public class CreditCardView: UIView {
     
     var backgroundView:CCBackgroundView
     
-    
     public override init(frame: CGRect) {
-        backgroundView = CCBackgroundView(frame: frame)
-        
+        backgroundView = CCBackgroundView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
         super.init(frame: frame)
-        
         setupViews()
     }
     
     public required init?(coder aDecoder: NSCoder) {
         backgroundView = CCBackgroundView()
-        
         super.init(coder: aDecoder)
-        
         setupViews()
     }
     
     public init(frame: CGRect, template: CCBackgroundView.CCBackgroundTemplate) {
-        backgroundView = CCBackgroundView(frame: frame, template: template)
+        backgroundView = CCBackgroundView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height), template: template)
         super.init(frame: frame)
-        
         setupViews()
     }
     
     func setupViews() {
         self.addSubview(backgroundView)
+        backgroundView.layer.cornerRadius = 10.0
     }
     
     

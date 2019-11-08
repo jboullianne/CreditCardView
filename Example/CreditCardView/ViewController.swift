@@ -16,12 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        creditCardView = CreditCardView(frame: CGRect(x: 5, y: 70, width: self.view.frame.width - 20, height: 200), template: .Basic)
+        creditCardView = CreditCardView(frame: CGRect(x: 10, y: 70, width: self.view.frame.width - 20, height: 200), template: .Basic)
         self.view.addSubview(creditCardView)
     }
 

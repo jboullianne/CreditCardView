@@ -12,6 +12,7 @@ public class CCBackgroundView: UIView {
     // Holds Templates For Credit Card Background
     public enum CCBackgroundTemplate {
         case Basic
+        case Flat
     }
     
     // Template Used When Creating Card
@@ -19,16 +20,25 @@ public class CCBackgroundView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setupView()
     }
     
     // Used to credit background from template
     init(frame:CGRect, template: CCBackgroundTemplate) {
         super.init(frame: frame)
+        setupView()
         self.template = template
+    }
+    
+    func setupView() {
+        template = .Flat
+        backgroundColor = UIColor(red: 72/255, green: 47/255, blue: 183/255, alpha: 1.0)
+        self.layer.masksToBounds = true
     }
     
     override public func draw(_ rect: CGRect) {
@@ -39,11 +49,13 @@ public class CCBackgroundView: UIView {
                 case .Basic:
                     drawBasicTemplate(rect: rect)
                     break
+                default:
+                    break
             }
         }
     }
     
-    private func drawBasicTemplate( rect: CGRect) {
+    private func drawBasicTemplate(rect: CGRect) {
         // Credit Card Background
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = rect
@@ -89,9 +101,7 @@ public class CCBackgroundView: UIView {
         column2.endPoint = CGPoint(x: 0.7, y: 1.0)
         self.layer.insertSublayer(column2, at: 1)
         
-        //maskLayer.cornerRadius = 10.0
         self.layer.masksToBounds = true
-        //self.layer.cornerRadius = 10.0
         self.backgroundColor = UIColor.clear
     }
 

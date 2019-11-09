@@ -13,7 +13,7 @@ public class CreditCardView: UIView {
     var backgroundView:CCBackgroundView
     var cardContentView:CCContentView
     
-    var CONTENT_PADDING:CGFloat = 15
+    var CONTENT_PADDING:CGFloat = 25
     
     public override init(frame: CGRect) {
         backgroundView = CCBackgroundView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))

@@ -15,6 +15,27 @@ public class CreditCardView: UIView {
     
     var CONTENT_PADDING:CGFloat = 25
     
+    public var nameLabel:UILabel {
+        get { return cardContentView.nameLabel }
+    }
+    
+    public var expLabel:UILabel {
+        get { return cardContentView.expLabel }
+    }
+    
+    public var numLabel:UILabel {
+        get { return cardContentView.numberLabel }
+    }
+    
+    public var brandLabel:UILabel {
+        get { return cardContentView.brandLabel }
+    }
+    
+    public var brandImageView:UIImageView {
+        get { return cardContentView.brandImageView }
+    }
+    
+    
     public override init(frame: CGRect) {
         backgroundView = CCBackgroundView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
         cardContentView = CCContentView(frame: CGRect(x: CONTENT_PADDING, y: CONTENT_PADDING, width: frame.width - (CONTENT_PADDING * 2), height: frame.height - (CONTENT_PADDING * 2)))

@@ -84,9 +84,9 @@
 		8B32C823A5263884ACC364067EFADA22 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F72DE5B1649CD164EFE965ED1C01C /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8B729C7257E0E5C7F86E3597D460E212 /* BeGreaterThanOrEqualTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1195FCC3BA982EF6A2BA54BFB5B906 /* BeGreaterThanOrEqualTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8C3F5E7FF0571B63D4DAA2825C9705D1 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF0B825EEC72D8223CE5340941DBD2 /* QuickSelectedTestSuiteBuilder.swift */; };
-		8C8A50102370D78B0071E480 /* CCBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A500F2370D78B0071E480 /* CCBackgroundView.swift */; };
-		8C8A50142370D9530071E480 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A50132370D9530071E480 /* CreditCardView.swift */; };
-		8C8A501623761BB10071E480 /* CCContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A501523761BB10071E480 /* CCContentView.swift */; };
+		8C8A501D237744090071E480 /* CCContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A501A237744090071E480 /* CCContentView.swift */; };
+		8C8A501E237744090071E480 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A501B237744090071E480 /* CreditCardView.swift */; };
+		8C8A501F237744090071E480 /* CCBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A501C237744090071E480 /* CCBackgroundView.swift */; };
 		8CB9325284A6E8E782D34AF833480CA3 /* BeGreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA40E22062FF97E1C92F80701C185C9 /* BeGreaterThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBFBABD983BA19E333E0EB1149C3BDF /* FBSnapshotTestCase.m */; };
 		8D16EAB20CD849E7DC1B1EDCEF61067D /* QCKDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE5915B278F2BB7FDC396B332969DEB /* QCKDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -330,9 +330,9 @@
 		8B4E195664C0CF37B200F01EEDC9B45E /* CwlMachBadInstructionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlMachBadInstructionHandler.m; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.m; sourceTree = "<group>"; };
 		8BFF9166360B2716DF0A68E58FA4785A /* XCTestObservationCenter+CurrentTestCaseTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTestObservationCenter+CurrentTestCaseTracker.h"; sourceTree = "<group>"; };
 		8C1195FCC3BA982EF6A2BA54BFB5B906 /* BeGreaterThanOrEqualTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeGreaterThanOrEqualTo.swift; path = Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift; sourceTree = "<group>"; };
-		8C8A500F2370D78B0071E480 /* CCBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBackgroundView.swift; sourceTree = "<group>"; };
-		8C8A50132370D9530071E480 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
-		8C8A501523761BB10071E480 /* CCContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCContentView.swift; sourceTree = "<group>"; };
+		8C8A501A237744090071E480 /* CCContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCContentView.swift; sourceTree = "<group>"; };
+		8C8A501B237744090071E480 /* CreditCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		8C8A501C237744090071E480 /* CCBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCBackgroundView.swift; sourceTree = "<group>"; };
 		8CD609D1D873680841BE65FDD0B996EA /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
 		8D98BF703927CBB94BF8187986412ECD /* CreditCardView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CreditCardView.modulemap; sourceTree = "<group>"; };
 		8E379D534C75CFBD5FEB60E7F34E1B06 /* Pods-CreditCardView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CreditCardView_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -594,9 +594,7 @@
 		659E3DB9A545E427836FF75D309D133A /* CreditCardView */ = {
 			isa = PBXGroup;
 			children = (
-				8C8A50132370D9530071E480 /* CreditCardView.swift */,
-				8C8A500F2370D78B0071E480 /* CCBackgroundView.swift */,
-				8C8A501523761BB10071E480 /* CCContentView.swift */,
+				8C8A5019237743FE0071E480 /* Classes */,
 				B4BFB7DDB9AE10FCE07997E79E43C806 /* Pod */,
 				F1ED44D4D0574E74BC734971E0E8C9E2 /* Support Files */,
 			);
@@ -619,6 +617,16 @@
 				CA9AD83ED2C65245B3E184EFBA34CBA4 /* XCTestObservationCenter+CurrentTestCaseTracker.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		8C8A5019237743FE0071E480 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8C8A501C237744090071E480 /* CCBackgroundView.swift */,
+				8C8A501A237744090071E480 /* CCContentView.swift */,
+				8C8A501B237744090071E480 /* CreditCardView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		9FDC4C9C6D0DF671FCD0B46D257F4273 /* Support Files */ = {
@@ -1335,10 +1343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8A501D237744090071E480 /* CCContentView.swift in Sources */,
 				A987A5E5DB419E68A5627668363F396C /* CreditCardView-dummy.m in Sources */,
-				8C8A50102370D78B0071E480 /* CCBackgroundView.swift in Sources */,
-				8C8A501623761BB10071E480 /* CCContentView.swift in Sources */,
-				8C8A50142370D9530071E480 /* CreditCardView.swift in Sources */,
+				8C8A501F237744090071E480 /* CCBackgroundView.swift in Sources */,
+				8C8A501E237744090071E480 /* CreditCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

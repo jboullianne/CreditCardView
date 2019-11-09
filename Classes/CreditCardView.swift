@@ -10,7 +10,7 @@ import UIKit
 public class CreditCardView: UIView {
 
     
-    var backgroundView:CCBackgroundView
+    public var backgroundView:CCBackgroundView
     var cardContentView:CCContentView
     
     var CONTENT_PADDING:CGFloat = 25

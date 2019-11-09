@@ -46,6 +46,9 @@ creditCardView.expLabel.text = "02/30"
 creditCardView.numLabel.text = "1111 2222 3333 4444"
 creditCardView.brandLabel.text = "VISA"
 creditCardView.brandImageView.image = UIImage()
+
+// For Custom Background
+creditCardView.backgroundView = //Custom Background View
 ```
 
 ## Author

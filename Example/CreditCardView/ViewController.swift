@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         // Add Shadow to Credit card
         creditCardView.layer.applySketchShadow(color: UIColor.black, alpha: 0.5, x: 0, y: 2, blur: 60, spread: 0)
         
+        // Changeg Card Details
+        creditCardView.nameLabel.text = "Jean-Marc Boullianne"
+        creditCardView.expLabel.text = "02/30"
+        creditCardView.numLabel.text = "1111 2222 3333 4444"
+        creditCardView.brandLabel.text = "VISA"
+        creditCardView.brandImageView.image = UIImage()
     }
 
     override func didReceiveMemoryWarning() {

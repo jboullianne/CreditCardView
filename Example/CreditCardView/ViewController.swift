@@ -16,7 +16,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        creditCardView = CreditCardView(frame: CGRect(x: 10, y: 70, width: self.view.frame.width - 20, height: 200), template: .Basic)
+        let c1:UIColor = UIColor(rgb: 0xFBBC7C)
+        let c2:UIColor = UIColor(rgb: 0xFA8D58)
+        let c3:UIColor = UIColor(rgb: 0xFA7574)
+        let c4:UIColor = UIColor(rgb: 0xFBA595)
+        let c5:UIColor = UIColor(rgb: 0x7C58FB)
+        
+        // Examples of Different Templates
+        /*
+        creditCardView = CreditCardView(frame: CGRect(x: 10, y: 50, width: self.view.frame.width - 20, height: 215),
+                                        template: .Gradient(c1, c2))
+        
+        creditCardView = CreditCardView(frame: CGRect(x: 10, y: 50, width: self.view.frame.width - 20, height: 215),
+                                        template: .Basic(c1, c2, c3))
+ 
+        creditCardView = CreditCardView(frame: CGRect(x: 10, y: 50, width: self.view.frame.width - 20, height: 215),
+                                        template: .Flat(c3))
+        */
+        
+        creditCardView = CreditCardView(frame: CGRect(x: 10, y: 50, width: self.view.frame.width - 20, height: 215),
+                                        template: .Curve(c1, c2, c3, c4, c5))
+        
         self.view.addSubview(creditCardView)
         
         // Add Shadow to Credit card
@@ -57,6 +77,24 @@ extension CALayer {
             let rect = bounds.insetBy(dx: dx, dy: dx)
             shadowPath = UIBezierPath(rect: rect).cgPath
         }
+    }
+}
+
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+    
+    convenience init(rgb: Int) {
+        self.init(
+            red: (rgb >> 16) & 0xFF,
+            green: (rgb >> 8) & 0xFF,
+            blue: rgb & 0xFF
+        )
     }
 }
 

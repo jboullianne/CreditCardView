@@ -68,7 +68,9 @@ class CCContentView: UIView {
         numberLabel.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         numberLabel.textColor = UIColor.white
         numberLabel.font = UIFont(name: "HelveticaNeue-Medium", size: 27)
-        numberLabel.addCharactersSpacing(spacing: 6, text: "**** **** **** 3017")
+        numberLabel.numberOfLines = 1
+        numberLabel.minimumScaleFactor = 0.5
+        numberLabel.adjustsFontSizeToFitWidth = true
         numberLabel.translatesAutoresizingMaskIntoConstraints = false
         
         self.addSubview(bottomStack)
@@ -92,6 +94,9 @@ class CCContentView: UIView {
         nameLabel.font = UIFont(name: "HelveticaNeue-Medium", size: 17)
         nameLabel.textColor = UIColor.white
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        nameLabel.numberOfLines = 1
+        nameLabel.minimumScaleFactor = 0.5
+        nameLabel.adjustsFontSizeToFitWidth = true
         
         let dStack:UIStackView = UIStackView(arrangedSubviews: [nameTitleLabel, nameLabel])
         dStack.axis = .vertical
@@ -111,6 +116,9 @@ class CCContentView: UIView {
         expLabel.font = UIFont(name: "HelveticaNeue-Medium", size: 17)
         expLabel.textColor = UIColor.white
         expLabel.translatesAutoresizingMaskIntoConstraints = false
+        expLabel.numberOfLines = 1
+        expLabel.minimumScaleFactor = 0.5
+        expLabel.adjustsFontSizeToFitWidth = true
         
         let eStack:UIStackView = UIStackView(arrangedSubviews: [expTitleLabel, expLabel])
         eStack.axis = .vertical

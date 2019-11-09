@@ -12,6 +12,18 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Screenshots
 ![BasicFull](screenshots/Basic_Full.png)
 
+### Card Templates
+
+```swift
+CCBackgroundTemplate.Basic
+```
+![BasicSmall](screenshots/Basic_Small.png)
+
+```swift
+CCBackgroundTemplate.Flat
+```
+![FlatSmall](screenshots/Flat_Small.png)
+
 ## Requirements
 Requires at least iOS 9.0.
 
@@ -22,6 +34,18 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'CreditCardView'
+```
+
+## Using The CreditCardView
+```swift
+creditCardView = CreditCardView(frame: CGRect(), template: .Basic)
+
+// Change Card Details
+creditCardView.nameLabel.text = "Jean-Marc Boullianne"
+creditCardView.expLabel.text = "02/30"
+creditCardView.numLabel.text = "1111 2222 3333 4444"
+creditCardView.brandLabel.text = "VISA"
+creditCardView.brandImageView.image = UIImage()
 ```
 
 ## Author

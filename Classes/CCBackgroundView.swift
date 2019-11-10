@@ -59,7 +59,6 @@ public class CCBackgroundView: UIView {
                     break
                 case .Gradient(_, _):
                     drawGradientTemplate(rect: rect, template: template)
-                default:
                     break
             }
         }

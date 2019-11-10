@@ -96,7 +96,7 @@ public class CCBackgroundView: UIView {
             column1.setAffineTransform(CGAffineTransform(rotationAngle: -1 * CGFloat.pi / 4.0).concatenating(CGAffineTransform(translationX: rect.width/8.0, y: rect.height/2.0)))
             //let colStart = UIColor(red: 103/255, green: 128/255, blue: 200/255, alpha: 0.7)
             //let colEnd = UIColor(red: 103/255, green: 128/255, blue: 200/255, alpha: 0)
-            column1.colors = [c1.withAlphaComponent(0.7).cgColor, c1.withAlphaComponent(0).cgColor]
+            column1.colors = [c2.withAlphaComponent(0.7).cgColor, c2.withAlphaComponent(0).cgColor]
             column1.startPoint = CGPoint(x: 0, y: 0.5)
             column1.endPoint = CGPoint(x: 1.0, y: 0.5)
             self.layer.insertSublayer(column1, at: 1)
@@ -106,7 +106,7 @@ public class CCBackgroundView: UIView {
             column2.frame = CGRect(x: 0, y: 0, width: rect.width, height: rect.height/4.0)
             column2.setAffineTransform(CGAffineTransform(rotationAngle: -1 * CGFloat.pi / 4.0))
             //let colStart2 = UIColor(red: 103/255, green: 128/255, blue: 200/255, alpha: 0.7)
-            column2.colors = [c2.withAlphaComponent(0.5).cgColor, c2.withAlphaComponent(0.2).cgColor]
+            column2.colors = [c1.withAlphaComponent(0.5).cgColor, c1.withAlphaComponent(0.2).cgColor]
             column2.startPoint = CGPoint(x: 0.2, y: 0)
             column2.endPoint = CGPoint(x: 0.7, y: 1.0)
             self.layer.insertSublayer(column2, at: 1)
@@ -169,7 +169,7 @@ public class CCBackgroundView: UIView {
             let column1 = CAGradientLayer()
             column1.frame = CGRect(x: 0, y: 0, width: rect.width, height: rect.height/6.0)
             column1.setAffineTransform(CGAffineTransform(rotationAngle: -1 * CGFloat.pi / 4.0).concatenating(CGAffineTransform(translationX: -1 * rect.width/8.0, y: rect.height/2.0)))
-            column1.colors = [c1.cgColor, c2.cgColor]
+            column1.colors = [c2.withAlphaComponent(0.4).cgColor, c1.withAlphaComponent(0.4).cgColor]
             column1.startPoint = CGPoint(x: 0, y: 0.5)
             column1.endPoint = CGPoint(x: 1.0, y: 0.5)
             self.layer.insertSublayer(column1, at: 1)
@@ -177,7 +177,7 @@ public class CCBackgroundView: UIView {
             let column2 = CAGradientLayer()
             column2.frame = CGRect(x: 0, y: 0, width: rect.width, height: rect.height/6.0)
             column2.setAffineTransform(CGAffineTransform(rotationAngle: -1 * CGFloat.pi / 4.0).concatenating(CGAffineTransform(translationX: rect.width/8.0, y: rect.height/2.0)))
-            column2.colors = [c1.cgColor, c2.cgColor]
+            column2.colors = [c2.withAlphaComponent(0.4).cgColor, c1.withAlphaComponent(0.4).cgColor]
             column2.startPoint = CGPoint(x: 0, y: 0.5)
             column2.endPoint = CGPoint(x: 1.0, y: 0.5)
             self.layer.insertSublayer(column2, at: 1)
